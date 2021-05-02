@@ -1,0 +1,48 @@
+Pseudo-classes are used to represent which of the following?
+
+Which of the following declarations will hide an element, but cause it to still take up space and affect the layout?\
+
+Which property can be used to control the formatting of white space inside of an element?
+
+
+Which of the following will redefine the default margin and padding settings for all browsers so that they are identical?
+
+Which of the following properties allows you to add images to list items?
+:list-style-image
+
+Which of the following best describes the result of minifying CSS?:- 
+
+
+
+Which of the following would be the result of the rule below?
+
+tr:nth-child(2n){
+  background-color: red; 
+}
+:--- Changes the background color of every even table row to red
+
+Which of the following could be used to style a link whose URL begins with https://sales.?
+:- 
+a[href^='https://sales.'] {
+    color: pink;
+}
+
+
+Which of the following will be the result of the following rule?
+
+div {
+  background-color: rgba(255,255,255,0.8); 
+}
+:-- It sets a white background with a transparency of 80% to the div element.
+
+
+What's the default width of block-level elements?:- 100%
+
+The universal selector selects which of the following?:- 
+Every element in the document tree
+
+
+Which of the following is true regarding the animation of SVG elements with CSS?:-
+:- They can be animated with the same CSS properties as HTML elements.
+
+
