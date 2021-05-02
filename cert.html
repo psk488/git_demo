@@ -1,0 +1,104 @@
+<style>
+table, td, th {
+  border: 1px solid black;
+  font-size: 10px;
+}
+
+table {
+ 
+  border-collapse: collapse;
+}
+</style>
+<div class="row" id="testing_graph">
+      <div class="col-md-8 offset-md-2">
+        <h2>&nbsp;</h2>
+        <div class="card p-1">
+        
+          <div class="row">
+        <div class="col-md-6">
+          <img src="<?php echo base_url(); ?>assets/img/Roush.png" style="float: left;">
+        </div>
+
+        <div class="col-md-6">
+          <img src="<?php echo base_url(); ?>assets/img/logo.png"  style="float: left;">
+        </div>
+      </div>
+      <p>&nbsp;</p>
+
+      <center><h3 class=""><i>Certificate of Completion</i></h3></center>
+      <center><p class="">This acknowledges that</p></center>
+      <center>
+        <h4 class="" style="text-transform: capitalize;">
+          priyanka
+        </h4>
+      </center>
+      <center>
+        
+      </center>
+      <center>test name'</i></h5>
+      <!-- with <?php echo ($result[0]['score'] * 100)/$result[0]['out_of']; ?>% Score. -->
+      </center>
+      <center>
+      <p class="">on 
+        <?php
+        $date= date_create($result[0]['exam_datetime']);
+       
+      echo date_format($date,"m/d/Y"); 
+      ?>.
+      </p>
+       <p>Our Grade Pattern as follows:</p>
+         <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Range</th>
+        <th>Certification type</th>        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Less than 50%</td>
+        <td>Needs more Training</td>       
+      </tr>
+      <tr>
+        <td>50% - 70%</td>
+        <td>Minimal Certification</td>       
+      </tr>
+      <tr>
+        <td>70% - 80%</td>
+        <td>Basic certification</td>       
+      </tr>
+      <tr>
+        <td>80% - 90%</td>
+        <td>Strong certification</td>       
+      </tr>
+      <tr>
+        <td>90%+</td>
+        <td>Exceptional  certification</td>       
+      </tr>
+      
+    </tbody>
+  </table>
+    </center>
+        <div class="ed" style="text-align: right;">
+          <div class=""><i><b>Certified by- </b></i></div>
+          <div class="" ><i>Mr. Edward Pretzel, President</i></div>
+          <div class=""><i>Costing Expert</i></div>
+        </div>
+        <div class="cars">
+          <img src="<?php echo base_url(); ?>/assets/img/cars.png" class="img-fluid mx-auto">
+        </div>
+       <?php }
+       else
+        { 
+        ?>
+        <p class="text-center">
+        Thank you for taking the<br/>
+        <b> <?php echo $result[0]['test_name']; ?></b> exam.
+        <br/> Unfortunately, you did not meet the minimum score required to pass the exam.              
+        </p>
+        <?php 
+          } 
+        ?>          
+        </div>  
+      </div>
+    </div>
